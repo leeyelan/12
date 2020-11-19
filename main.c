@@ -3,12 +3,33 @@
 #include <stdlib.h>
 
 void main(void){
-	char str[30] = "happy C programming";
-	char dst[100];
-	
+char str[100];
+int i;
 
+
+FILE *fp;
+
+fp=fopen("sample.text","w");
+
+if(fp==NULL){
 	
-	printf("length of \%s\ : %i", str,strlen(str));
+	return -1;
+}
+
+for(i=0; i<3; i++) {
+
+printf("input a word:  ");
+scanf("%s",str);
+
+fprintf(fp,"%s\n",str);
+
+}
+
+
+fclose(fp);
+
+
+
 }
 
 
