@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 void main(void){
-	char src[] = "The worst things to eat before you sleep";
+	char str[30] = "happy C programming";
 	char dst[100];
 	
-	strcpy(dst,src);
+
 	
-	printf("copied string : %s", dst);
+	printf("length of \%s\ : %i", str,strlen(str));
 }
 
 
